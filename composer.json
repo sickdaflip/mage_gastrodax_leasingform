@@ -1,0 +1,40 @@
+{
+  "name": "sickdaflip/mage_gastrodax_leasingform",
+  "type": "magento-module",
+  "license": "MIT",
+  "description": "Leasingform for Magento 1.9.3.6",
+  "authors": [
+    {
+      "name": "SickDaFlip",
+      "email": "philippbreitsprecher@gmail.com"
+    }
+  ],
+  "extra": {
+    "map": [
+      [
+        "app/code/local/Gastrodax/Leasingform/*",
+        "app/code/local/Gastrodax/Leasingform/"
+      ],
+      [
+        "app/design/frontend/base/default/layout/gastrodax_leasingform.xml",
+        "app/design/frontend/base/default/layout/gastrodax_leasingform.xml"
+      ],
+      [
+        "app/design/frontend/base/default/template/gastrodax/leasingform/form.phtml",
+        "app/design/frontend/base/default/template/gastrodax/leasingform/form.phtml"
+      ],
+      [
+        "app/etc/modules/Gastrodax_Leasingform.xml",
+        "app/etc/modules/Gastrodax_Leasingform.xml"
+      ],
+      [
+        'app/locale/de_DE/template/email/leasing_notification_admin.html',
+        'app/locale/de_DE/template/email/leasing_notification_admin.html'
+      ],
+      [
+        'app/locale/en_US/template/email/leasing_notification_admin.html',
+        'app/locale/en_US/template/email/leasing_notification_admin.html'
+      ]
+    ]
+  }
+}

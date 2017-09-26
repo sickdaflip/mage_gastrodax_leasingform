@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gastrodax_Leasingform>
+            <version>0.0.1</version>
+        </Gastrodax_Leasingform>
+    </modules>
+    <global>
+        <blocks>
+            <leasingform><!-- block alias -->
+                <class>Gastrodax_Leasingform_Block</class>
+            </leasingform>
+        </blocks>
+        <helpers>
+            <leasingform><!-- helper alias -->
+                <class>Gastrodax_Leasingform_Helper</class>
+            </leasingform>
+        </helpers>
+        <template>
+            <email>
+                <leasing_notification_admin module="Gastrodax_Leasingform">
+                    <label>Gastrodax Leasingform Admin</label>
+                    <file>leasing_notification_admin.html</file>
+                    <type>html</type>
+                </leasing_notification_admin>
+            </email>
+        </template>
+    </global>
+    <frontend>
+        <routers>
+            <leasingform>
+                <use>standard</use>
+                <args>
+                    <module>Gastrodax_Leasingform</module>
+                    <frontName>leasing-mietkauf</frontName><!-- url key for module -->
+                </args>
+            </leasingform>
+        </routers>
+        <layout>
+            <updates>
+                <Gastrodax_Leasingform>
+                    <file>gastrodax_leasingform.xml</file><!-- frontend layout file -->
+                </Gastrodax_Leasingform>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Gastrodax_Leasingform>
+                    <files>
+                        <default>Gastrodax_Leasingform.csv</default><!-- translation file (not mandatory) -->
+                    </files>
+                </Gastrodax_Leasingform>
+            </modules>
+        </translate>
+    </frontend>
+</config>
