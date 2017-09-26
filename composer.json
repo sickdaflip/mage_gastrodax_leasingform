@@ -28,12 +28,12 @@
         "app/etc/modules/Gastrodax_Leasingform.xml"
       ],
       [
-        'app/locale/de_DE/template/email/leasing_notification_admin.html',
-        'app/locale/de_DE/template/email/leasing_notification_admin.html'
+        "app/locale/de_DE/template/email/leasing_notification_admin.html",
+        "app/locale/de_DE/template/email/leasing_notification_admin.html"
       ],
       [
-        'app/locale/en_US/template/email/leasing_notification_admin.html',
-        'app/locale/en_US/template/email/leasing_notification_admin.html'
+        "app/locale/en_US/template/email/leasing_notification_admin.html",
+        "app/locale/en_US/template/email/leasing_notification_admin.html"
       ]
     ]
   }
