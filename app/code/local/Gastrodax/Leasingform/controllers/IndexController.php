@@ -94,7 +94,6 @@ class Gastrodax_Leasingform_IndexController extends Mage_Core_Controller_Front_A
             'city' => $post['city'],
             'fon' => $post['fon'],
             'remarks' => $post['remarks'],
-            'feedback' => $post['feedback'],
             'bdsg' => $post['bdsg'],
             'adminName' => $adminName,
             'storeName' => $storeName
