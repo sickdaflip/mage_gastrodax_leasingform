@@ -88,9 +88,7 @@
         <div class="small-12 column">
             <fieldset class="small-12 cell">
                 <input id="bdsg" name="bdsg" type="checkbox" value="accept" required>
-                <label for="bdsg">Hiermit willige ich der Erhebung und der Nutzung meiner vorstehend eingegebenen Daten
-                    gemäß den <a href="<?php echo $this->getUrl('datenschutz'); ?>">Datenschutzbestimmungen</a>
-                    ein.</label>
+                <label for="bdsg"><?php echo $this->__('Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an datenschutz@newgastroline.de widerrufen. Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="%s">Datenschutzerklärung</a>.', Mage::getUrl('datenschutz')) ?></label>
             </fieldset>
             <input type="submit" class="button float-right" value="Anfrage versenden">
         </div>
