@@ -1,6 +1,7 @@
-<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/banner/spage_banner_03_sm.jpg'; ?>" alt="Leasing Mietkauf Banner" />
-<h1>Ihre schnelle und einfache Finanzierung: Leasing und Mietkauf</h1>
-<h2 id="formular">Leasing/Mietkauf-Formular</h2>
+<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/banner/spage_banner_03_sm.jpg'; ?>"
+     alt="Leasing Mietkauf Banner"/>
+<h1>Ihre schnelle und einfache Finanzierung: Leasing oder Mietkauf</h1>
+<p class="h2" id="formular">Leasing/Mietkauf-Formular</p>
 <form action="<?php echo Mage::getBaseUrl() . 'leasing-mietkauf/index/post/'; ?>" method="post" id="leasing-form"
       data-abide novalidate>
     <input type="hidden" name="wcrl" value="<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>"/>
@@ -9,8 +10,8 @@
     <div data-abide-error class="alert callout" style="display: none;">
         <p><i class="fi-alert"></i><?php echo $this->__('There are some errors in your form.') ?></p>
     </div>
-    <div class="row expanded">
-        <div class="small-12 column">
+    <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="small-12 cell">
             <p class="text-center"><?php echo $this->__('Gern unterbreiten wir Ihnen ein kostenfreies, pers&ouml;nliches, unverbindliches Angebot. Bitte f&uuml;llen Sie hierzu das folgende Formular aus. Sobald Ihre Anfrage bei uns eingetroffen ist, setzen wir uns umgehend mit Ihnen in Verbindung.') ?></p>
             <fieldset>
                 <legend><?php echo $this->__('Ich interessiere mich für') ?></legend>
@@ -21,7 +22,7 @@
                 <span class="form-error"><?php echo $this->__('required') ?></span>
             </fieldset>
         </div>
-        <div class="small-12 medium-4 column">
+        <div class="small-12 medium-4 cell">
             <label for="object"><?php echo $this->__('Name des gewünschten Leasing-Objektes') ?>
                 <small><?php echo $this->__('required') ?></small>
                 <input id="object" name="object" type="text" required>
@@ -53,7 +54,7 @@
                 </select>
             </label>
         </div>
-        <div class="small-12 medium-4 column">
+        <div class="small-12 medium-4 cell">
             <label for="company"><?php echo $this->__('Unternehmen') ?>
                 <input id="company" name="company" type="text">
             </label>
@@ -69,7 +70,7 @@
                 <input id="street" name="street" type="text">
             </label>
         </div>
-        <div class="small-12 medium-4 column">
+        <div class="small-12 medium-4 cell">
             <label for="zip"><?php echo $this->__('Postleitzahl') ?>
                 <input id="zip" name="zip" type="text">
             </label>
@@ -85,50 +86,42 @@
                 <textarea id="remarks" name="remarks" placeholder=""></textarea>
             </label>
         </div>
-        <div class="small-12 column">
-            <fieldset class="small-12 cell">
-                <input id="bdsg" name="bdsg" type="checkbox" value="accept" required>
-                <label for="bdsg"><?php echo $this->__('Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an datenschutz@newgastroline.de widerrufen. Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="%s">Datenschutzerklärung</a>.', Mage::getUrl('datenschutz')) ?></label>
-            </fieldset>
+        <div class="small-12 cell">
+            <div class="grid-x">
+                <div class="small-1 cell"><input id="bdsg" name="bdsg" type="checkbox" value="accept" required></div>
+                <div class="small-11 cell"><label for="bdsg"><?php echo $this->__('Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an datenschutz@newgastroline.de widerrufen. Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer <a href="%s">Datenschutzerklärung</a>.', Mage::getUrl('datenschutz')) ?></label></div>
+            </div>
             <input type="submit" class="button float-right" value="Anfrage versenden">
         </div>
     </div>
 </form>
-
-
 <p class="text-center">Sie benötigen eine <strong>Alternative zur klassischen Barzahlung</strong>? Dann nutzen Sie die
-    vielen Vorteile
-    unseres attraktiven Leasing- und Mietkaufangebotes. Zusammen mit unseren renommierten Partnern aus der
-    Finanzbranche – die <strong>abcfinance GmbH</strong> und die <strong>GRENKE AG</strong> – bieten wir von
-    GASTRODAX individuell abgestimmte Lösungen für unsere Kunden aus der Gastronomie.</p>
+    vielen Vorteile unseres attraktiven Leasing- und Mietkaufangebotes. Zusammen mit unseren renommierten Partnern aus der Finanzbranche – die <strong>abcfinance GmbH</strong> und die <strong>GRENKE AG</strong> – bieten wir von GASTRODAX individuell abgestimmte Lösungen für unsere Kunden aus der Gastronomie.</p>
 <hr>
 <strong>Unsere starken Finanzpartner:</strong>
 <p class="text-center">
-    <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/logos/Abcfinance-logo_100.jpg'; ?>"
-         style="height: 30px; margin: 10px;" alt="abcfinance GmbH ist GASTRODAX-Partner"/> &nbsp;
-    <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/logos/GRENKE_Logo_RGB_72dpi_100.jpg'; ?>"
-         style="height: 30px; margin:10px;" alt="Grenke AG ist GASTRODAX-Partner"/></p>
-<p class="text-center">Sie haben Fragen zu unseren Finanzierungsmöglichkeiten? Dann rufen Sie uns an – wir beraten Sie
-    gern
-    persönlich.</p>
-<div class="row">
-    <div class="small-12 small-centered text-center column">
-        <p style="font-size: 2rem;"><strong>Hotline 0800 456 6000</strong></p>
-    </div>
+    <img class="width-25" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/logos/Abcfinance-logo_100.jpg'; ?>"
+         alt="abcfinance GmbH ist GASTRODAX-Partner"/> &nbsp;
+    <img class="width-25" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/logos/GRENKE_Logo_RGB_72dpi_100.jpg'; ?>"
+         alt="Grenke AG ist GASTRODAX-Partner"/></p>
+<p class="text-center">Sie haben Fragen zu unseren Finanzierungsmöglichkeiten? Dann rufen Sie uns an – wir beraten Sie gern persönlich.</p>
+<div class="text-center">
+    <p style="font-size: 2rem;"><strong>Hotline 0800 456 6000</strong></p>
 </div>
 <hr>
-<h2>Finanzierung schafft Mehrwert</h2>
+<div class="text-center">
+<p class="h2">Finanzierung schafft Mehrwert</p>
 <p><strong>Sie erhalten die Spielräume, die Sie benötigen.</strong><br>Unsere Angebote sind auf Sie zugeschnittene
     Lösungen. Vertragsinhalte zu Raten, Laufzeiten etc. werden nach Ihren Bedürfnissen festgelegt.</p>
 <p><strong>Sie behalten stets den Überblick über Ihre Verpflichtung.</strong><br>Durch die konstanten Monatsraten
     kalkulieren Sie dauerhaft sicher.</p>
 <p><strong>Sie sparen Zeit – wir prüfen innerhalb sehr kurzer Zeit.</strong><br>Eine Zusage erhalten Sie
     gegebenenfalls innerhalb weniger Minuten. Anschließend übernehmen wir alle Formalitäten für Sie.</p>
-<h2>Leasing oder Mietkauf?</h2>
+<p class="h2">Leasing oder Mietkauf?</p>
 <p>Wenn Sie bei uns ein Produkt über einen Mietkauf finanzieren, sind Sie am Ende der Vertragslaufzeit der
     Eigentümer dieses Produktes. Im Gegensatz dazu bezahlen Sie beim Leasing für dessen Nutzung. Eigentümer bleibt
     in diesem Fall die Leasing-Gesellschaft.</p>
-<h2>Warum lohnt sich Leasing?</h2>
+<p class="h2">Warum lohnt sich Leasing?</p>
 <ul>
     <li>Geleaste Produkte erscheinen nicht in Ihrer Bilanz (Bilanzneutralität). Lediglich die Raten werden von Ihnen
         als Betriebsausgaben verbucht.
@@ -147,7 +140,7 @@
         laut AfA-Tabelle (Abschreibungstabelle für allgemein verwendbare Anlagegüter).
     </li>
 </ul>
-<h2>Was sind die Unterschiede zum Mietkauf?</h2>
+<p class="h2">Was sind die Unterschiede zum Mietkauf?</p>
 <ul>
     <li>Erst am Ende der vertraglich vereinbarten Zeit sind Sie bei einem Mietkauf der (zivilrechtliche) Eigentümer
         des Produktes.
@@ -162,42 +155,36 @@
     <li>Vertragslaufzeiten können beim Vertragsabschluss flexibler ausgestaltet werden.</li>
     <li>Eine Kündigung ist immer möglich, wenn Sie die Abschlusszahlung leisten.</li>
 </ul>
-<div class="row">
-    <div class="small-12 medium-3 columns">
-        <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/Bilder/2017-05-29_leasingvertrag_1920.jpg'; ?>"
-             style="margin-top: 5px;" alt="Leasingvertrag Beispiel"/>
-        <p>Wir übernehmen für Sie alle Formalitäten.</p>
+</div>
+<div class="grid-x grid-margin-x grid-padding-x align-middle">
+    <div class="small-12 medium-3 cell">
+        <img class="thumbnail" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/Bilder/2017-05-29_leasingvertrag_1920.jpg'; ?>"
+             alt="Leasingvertrag Beispiel"/>
+        <p class="text-center">Wir übernehmen für Sie alle Formalitäten.</p>
     </div>
-    <div class="small-12 medium-9 columns">
-        <h2>Wie verläuft die Finanzierung?</h2>
+    <div class="small-12 medium-9 cell">
+        <p class="h2">Wie verläuft die Finanzierung?</p>
         <ol>
             <li>Sie fordern bei uns ein Angebot über Ihren Warenbedarf und die gewünschte Finanzierungsart an.</li>
-            <li>Wir erstellen für Sie ein individuelles Angebot und stellen mit Ihnen den Mietkauf- bzw.
-                Leasing-Antrag.
-            </li>
+            <li>Wir erstellen für Sie ein individuelles Angebot und stellen mit Ihnen den Mietkauf- bzw. Leasing-Antrag.</li>
             <li>Unser Finanzpartner prüft Ihre Bonität, das Investitionsobjekt (die Ware) und den Antrag.</li>
-            <li>Sie erhalten eine Auftragsbestätigung in Verbindung mit einem Leasing- oder Mietkauf-Vertrag sowie
-                ein Formular für die Übernahmebestätigung. Den Vertrag senden Sie unterschrieben an uns zurück.
-            </li>
+            <li>Sie erhalten eine Auftragsbestätigung in Verbindung mit einem Leasing- oder Mietkauf-Vertrag sowie ein Formular für die Übernahmebestätigung. Den Vertrag senden Sie unterschrieben an uns zurück.</li>
             <li>Wir liefern Ihnen die bestellte Ware.</li>
-            <li>Sie bestätigen dem Finanzpartner den Erhalt der Ware mit der rechtsverbindlich unterschriebenen
-                Übernahmebestätigung.
-            </li>
-            <li>Sie erhalten abschließende Informationen über das Vertragsverhältnis, wie Vertragslaufzeiten,
-                Rechnungsbetrag, Raten; zudem eine Zahlungsaufforderung.
-            </li>
+            <li>Sie bestätigen dem Finanzpartner den Erhalt der Ware mit der rechtsverbindlich unterschriebenen Übernahmebestätigung.</li>
+            <li>Sie erhalten abschließende Informationen über das Vertragsverhältnis, wie Vertragslaufzeiten, Rechnungsbetrag, Raten; zudem eine Zahlungsaufforderung.</li>
             <li>Die Raten werden in der Regel mit Ihrer Einzugsermächtigung von Ihrem Konto eingezogen.</li>
         </ol>
     </div>
 </div>
-<h2>Welche Voraussetzungen muss ich für Leasing oder Mietkauf erfüllen?</h2>
-<ul>
-    <li>Ihr Gewerbe ist in Deutschland gemeldet.</li>
-    <li>Ihr Unternehmen besteht seit mindestens zwei Jahren.</li>
-    <li>Sie sind seit mindestens zwei Jahren im selben Gewerbe tätig.</li>
-    <li>Der Finanzdienstleister (unser Partner) prüft erfolgreich Ihre Bonität.</li>
-    <li>Das Auftragsvolumen umfasst mindestens 1.000 Euro (netto).</li>
-</ul>
-<hr>
-<p class="text-center">Sie haben Fragen zu unseren Finanzierungsmöglichkeiten? Dann rufen Sie uns an – wir beraten Sie
-    gern persönlich.</p>
+<div class="text-center">
+    <p class="h2">Welche Voraussetzungen muss ich für Leasing oder Mietkauf erfüllen?</p>
+    <ul>
+        <li>Ihr Gewerbe ist in Deutschland gemeldet.</li>
+        <li>Ihr Unternehmen besteht seit mindestens zwei Jahren.</li>
+        <li>Sie sind seit mindestens zwei Jahren im selben Gewerbe tätig.</li>
+        <li>Der Finanzdienstleister (unser Partner) prüft erfolgreich Ihre Bonität.</li>
+        <li>Das Auftragsvolumen umfasst mindestens 1.000 Euro (netto).</li>
+    </ul>
+    <hr>
+    <p>Sie haben Fragen zu unseren Finanzierungsmöglichkeiten? Dann rufen Sie uns an – wir beraten Sie gern persönlich.</p>
+</div>
