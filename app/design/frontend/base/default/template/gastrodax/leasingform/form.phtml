@@ -1,7 +1,6 @@
-<img class="float-center hide-for-small-only" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/banner/leasing-mietkauf-banner.png'; ?>"
-     alt="Leasing Mietkauf Banner"/>
-<h1>Ihre schnelle und einfache Finanzierung: Leasing oder Mietkauf</h1>
-<p class="h2" id="formular">Leasing/Mietkauf-Formular</p>
+<img class="float-center hide-for-small-only" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/banner/leasing-mietkauf-banner.png'; ?>" alt="Leasing Mietkauf Banner"/>
+<h1><?php echo $this->__('Ihre schnelle und g&uuml;nstige Finanzierung: Leasing oder Mietkauf') ?></h1>
+<p class="h2" id="formular"><?php echo $this->__('Leasing/Mietkauf-Formular') ?></p>
 <form action="<?php echo Mage::getBaseUrl() . 'leasing-mietkauf/index/post/'; ?>" method="post" id="leasing-form"
       data-abide novalidate>
     <input type="hidden" name="wcrl" value="<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>"/>
@@ -95,10 +94,9 @@
         </div>
     </div>
 </form>
-<p class="text-center">Sie benötigen eine <strong>Alternative zur klassischen Barzahlung</strong>? Dann nutzen Sie die
-    vielen Vorteile unseres attraktiven Leasing- und Mietkaufangebotes. Zusammen mit unseren renommierten Partnern aus der Finanzbranche – die <strong>abcfinance GmbH</strong> und die <strong>GRENKE AG</strong> – bieten wir von GASTRODAX individuell abgestimmte Lösungen für unsere Kunden aus der Gastronomie.</p>
+<p class="text-center">Sie benötigen eine <strong>Alternative zur klassischen Barzahlung</strong>? Dann nutzen Sie die vielen Vorteile unseres attraktiven Leasing- und Mietkaufangebotes. Zusammen mit unseren renommierten Partnern aus der Finanzbranche – die <strong>abcfinance GmbH</strong> und die <strong>GRENKE AG</strong> – bieten wir von GASTRODAX individuell abgestimmte Lösungen für unsere Kunden aus der Gastronomie.</p>
 <hr>
-<strong>Unsere starken Finanzpartner:</strong>
+<p><strong><?php echo $this->__('Unsere starken Finanzpartner:') ?></strong></p>
 <p class="text-center">
     <img class="width-25" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'wysiwyg/cms/logos/Abcfinance-logo_100.jpg'; ?>"
          alt="abcfinance GmbH ist GASTRODAX-Partner"/> &nbsp;
