@@ -25,21 +25,10 @@
             </fieldset>
         </div>
         <div class="small-12 medium-4 cell">
-            <label for="object"><?php echo $this->__('Name des gewünschten Leasing-Objektes') ?>
+            <label for="object"><?php echo $this->__('Name der gewünschten Leasing/Mietkauf-Objekte') ?>
                 <small><?php echo $this->__('required') ?></small>
-                <input id="object" name="object" type="text" required>
+                <textarea id="object" name="object" placeholder=""></textarea>
                 <span class="form-error"><?php echo $this->__('required') ?></span>
-            </label>
-            <label for="sku"><?php echo $this->__('Artikelnummer') ?>
-                <input id="sku" name="sku" type="text">
-            </label>
-            <label for="price"><?php echo $this->__('Anschaffungspreis inkl. MwSt.') ?>
-                <div class="input-group">
-                    <input id="price" name="price" class="input-group-field" type="number">
-                    <span class="input-group-label">
-                                <?php echo Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol(); ?>
-                            </span>
-                </div>
             </label>
             <label for="term"><?php echo $this->__('Wählen Sie eine Vertragslaufzeit') ?>
                 <select id="term" name="term" required>
