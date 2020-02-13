@@ -27,14 +27,6 @@ class Gastrodax_Leasingform_IndexController extends Mage_Core_Controller_Front_A
                     $error = true;
                 }
 
-                if (!Zend_Validate::is(trim($post['sku']), 'NotEmpty')) {
-                    $error = true;
-                }
-
-                if (!Zend_Validate::is(trim($post['price']), 'NotEmpty')) {
-                    $error = true;
-                }
-
                 if (!Zend_Validate::is(trim($post['term']), 'NotEmpty')) {
                     $error = true;
                 }
@@ -83,8 +75,6 @@ class Gastrodax_Leasingform_IndexController extends Mage_Core_Controller_Front_A
         $vars = array(
             'type' => $post['type'],
             'object' => $post['object'],
-            'sku' => $post['sku'],
-            'price' => $post['price'],
             'term' => $post['term'],
             'company' => $post['company'],
             'contact' => $post['contact'],
