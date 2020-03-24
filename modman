@@ -1,4 +1,4 @@
-app/code/local/Gastrodax/Leasingform/*  app/code/local/Gastrodax/Leasingform/
+app/code/local/Gastrodax/Leasingform/  app/code/local/Gastrodax/Leasingform/
 app/design/frontend/base/default/layout/gastrodax_leasingform.xml   app/design/frontend/base/default/layout/gastrodax_leasingform.xml
 app/design/frontend/base/default/template/gastrodax/leasingform/form.phtml  app/design/frontend/base/default/template/gastrodax/leasingform/form.phtml
 app/etc/modules/Gastrodax_Leasingform.xml   app/etc/modules/Gastrodax_Leasingform.xml
