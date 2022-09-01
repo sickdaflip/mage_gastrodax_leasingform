@@ -69,8 +69,8 @@ class Gastrodax_Leasingform_IndexController extends Mage_Core_Controller_Front_A
 
     private function notifyAdmin($post) {
         $mailSubject = 'Leasingform';
-        $adminEmail = Mage::getStoreConfig('trans_email/ident_general/email');
-        $adminName = Mage::getStoreConfig('trans_email/ident_general/name');
+        $adminEmail = Mage::getStoreConfig('trans_email/ident_sales/email');
+        $adminName = Mage::getStoreConfig('trans_email/ident_sales/name');
         $storeName = Mage::app()->getStore()->getName();
         $vars = array(
             'type' => $post['type'],
